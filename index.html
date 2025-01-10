@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QR - generator</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/app.js" defer></script>
+	<script src="libs/rain.js" defer></script>
+</head>
+<body>
+
+	<div class="logo" style="background-image: url(img/logo.svg);" onclick="window.open('https://www.instagram.com/dis.mariem?igsh=eTBjc2VrOHk3OW5h', '_blank')" ></div>
+
+	<section class="layers">
+		<div class="layers__container">
+			<div class="layers__item layer-1" style="background-image: url(img/layer-1.jpg);"></div>
+			<div class="layers__item layer-2" style="background-image: url(img/layer-2.png);"></div>
+			<div class="layers__item layer-3">
+				<div class="hero-content">
+					<h1>Генератор qr-кодів</h1>
+					<div class="hero-content__p">
+							<div class="dev" onclick="window.open('https://www.instagram.com/development.asylum?igsh=MXE4b3I3ZXd6d3kxaw==', '_blank')" >dev-inst: development.asylum</div>
+			      <input type="text" id="linkInput" placeholder="Введіть посилання">
+						<button id="generateBtn">Згенерувати QR-код</button>
+						<div id="qrcode"></div>
+						<div id="downloadOptions" style="display: none;">
+							<button id="downloadPngBtn">Завантажити PNG</button>
+							<button id="downloadSvgBtn">Завантажити SVG</button>
+						</div>	
+						<span class="dev" onclick="window.open('https://send.monobank.ua/jar/8US5j47iFK', '_blank')" >подякувати</span>	
+					</div>
+				</div>
+			</div>
+			<div class="layers__item layer-4">
+				<canvas class="rain"></canvas>
+			</div>
+			<div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div>
+			<div class="layers__item layer-6" style="background-image: url(img/layer-6.png);"></div>
+		</div>
+	</section>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
